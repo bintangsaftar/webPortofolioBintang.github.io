@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Bintang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="main-container">
+            <div class="nav">
+                <div class="nav-content">
+                <div class="logo">
+                    <img src="img/ngabers-std.png" alt="ngaberslogo" />
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portofolios">Portofolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <script>
+                    
+                </script>
+            </div>
+            </div>
+            <section id="home">
+                <div class="home-left">
+                    <h3 class="pre-title">
+                        <span class="text">🖐️Hello all My Name Is</span>
+                        <span class="text">Welcome To The Site😎</span>
+                    </h3>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const texts = document.querySelectorAll('.text');
+                            let currentText = 0;
+                        
+                            function nextText() {
+                                texts[currentText].style.opacity = 0;
+                                texts[currentText].style.width = '0';  // Reset lebar untuk animasi
+                        
+                                currentText = (currentText + 1) % texts.length;
+                        
+                                texts[currentText].style.opacity = 1;
+                                texts[currentText].style.width = '0';  // Memastikan lebar dimulai dari 0
+                                texts[currentText].style.animation = 'none';  // Hapus animasi
+                                texts[currentText].offsetHeight; // Trigger reflow untuk reset animasi
+                                texts[currentText].style.animation = 'berjalan 3s steps(30, end) forwards, berkedip 0.8s step-end infinite';
+                            }
+                        
+                            texts[currentText].style.opacity = 1;
+                            texts[currentText].style.animation = 'berjalan 3s steps(30, end) forwards, berkedip 0.8s step-end infinite';
+                        
+                            setInterval(nextText, 6000); // Ganti teks setiap 6 detik
+                        });
+                        
+                        
+                    </script>
+                </body>
+                </html>
+                    <h1 class="home-name">BINTANG SAFTAR</h1>
+                    <p>Freelance Graphic Designer dan Mahasiswa aktif Program Studi Teknologi Rekayasa Perangkat Lunak di Politeknik Negeri Banyuwangi. Memiliki minat dan keterampilan dalam Graphic Design dan UI/UX Design.</p>
+                    <br />
+                    <a href="CVBintang.pdf" target="_blank">
+                        <button class="btn">My Resume</button>
+                    </a>
+                    
+                    <a href="PortofolioBintang.pdf" target="_blank">
+                        <button class="btnPor">My Portofolio</button>
+                    </a>
+                </div>
+
+                <div class="home-right">
+                    <img src="img/fotobintang.png" alt="fotobintang" />
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- About -->
+    <section id="about">
+        <div class="main-container">
+            <h1 class="section-title-about">About</h1>
+            <p style="text-align: center; color: white;">Halo, saya Bintang seorang freelance graphic designer yang memiliki hasrat mendalam dalam Graphic Design, UI/UX Design, dan juga sedang memperdalam ilmu Web Development. Dengan latar belakang akademis di bidang Teknologi Rekayasa Perangkat Lunak, saya berdedikasi untuk menghadirkan solusi kreatif yang tidak hanya menarik secara visual tetapi juga fungsional dan intuitif. Mari kita kolaborasi untuk mengubah ide kreatif Anda menjadi realitas visual yang memukau.</p>
+            <br />
+            <br />
+            
+            <div class="grid-3">
+                <!-- About 1 -->
+                <div class="about">
+                    <div class="about-icon">
+                        <img src="img/graphic-design.png" alt="graphicdesign" width="24" height="24" viewbox ="0 0 24 24" />
+                    </div>
+                    <h4>Graphic Design</h4>
+                    <p>Desain grafis adalah sebuah proses komunikasi visual yang menggunakan teks, gambar, simbol, dan warna untuk menyampaikan pesan, ide, atau informasi kepada audiens. Proses ini melibatkan penggunaan elemen dan prinsip desain untuk menciptakan komposisi yang menarik secara estetika dan efektif dalam menyampaikan pesan.</p>
+                </div>
+
+                <!-- About 2 -->
+                <div class="about">
+                    <div class="about-icon">
+                        <img src="img/ux-design.png" alt="uiuxdesign" width="24" height="24" viewbox ="0 0 24 24" />
+                    </div>
+                    <h4>UI/UX Design</h4>
+                    <p>UI Design adalah tampilan produk yang visible atau bisa dilihat oleh mata. UI Design lebih fokus pada visualisasi, coloring, dan hal-hal yang berkaitan dengan interface yang akan digunakan oleh user. Sedangkan UX Design berfokus pada proses pembuatan produk hingga mampu mendapatkan pengalaman kemudahan dari user.</p>
+                </div>
+
+                <!-- About 3 -->
+                <div class="about">
+                    <div class="about-icon">
+                        <img src="img/web-development.png" alt="webdevelopment" width="24" height="24" viewbox ="0 0 24 24" />
+                    </div>
+                    <h4>Web Development</h4>
+                    <p>Web development adalah proses pembuatan dan pengembangan situs web yang bisa kita akses lewat internet. Proses ini mencakup berbagai aspek, mulai dari pengembangan halaman web sederhana yang berisi teks statis hingga aplikasi web kompleks, layanan jaringan sosial, dan solusi bisnis online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Portofolio 1-->
+    <section id="portofolios">
+        <div class="portofolios main-container">
+            <h1 class="section-title-portofolios">Featured Portofolio</h1>
+            <p style="text-align: center; color: black;">Halo, Dibawah ini merupakah contoh sebagian kecil hasil karya Design yang saya buat. Saya membuat Design untuk beberapa kebutuhan commercial dan non commercial dengan menggunakan beberaapa tolls seperti Adobe Photoshop, Adobe Ilustrator, CorelDraw, dan Figma. </p>
+            <div class="portofolios-grid">
+            <div class="portofolios">
+            <div class="portofolio-cover">
+                <img src="img/portofolio/portofolio1.jpg" alt="Portofolio 1" width="350" height="250" viewbox ="0 0 100 100" />
+            </div>
+
+            <div class="portofolio-info">
+                <div class="portofolio-title">
+                    <h4>T-shirt Design</h4>
+                </div>
+
+                <div class="portofolio-tags">
+                    <div>Design</div>
+                    <div>T-Shirt</div>
+                </div>
+
+                <p>Membuat T-Shirt Design dengan gaya modern dan retro, dengan tujuan akan menjual design tersebut. Saya menjual design tersebut di Instagram @ngabers.std yang saya kelola sendiri.</p>
+            </div>
+        </div>
+
+        <!-- portofolio 2 -->
+        <div class="portofolios">
+            <div class="portofolio-cover">
+                <img src="img/portofolio/portofolio2.jpg" alt="Portofolio 2" width="350" height="250" viewbox ="0 0 100 100" />
+            </div>
+
+            <div class="portofolio-info">
+                <div class="portofolio-title">
+                    <h4>Social Media Design</h4>
+                </div>
+
+                <div class="portofolio-tags">
+                    <div>FeedIG</div>
+                    <div>Design</div>
+                </div>
+
+                <p>Design Social Media atau feed IG design saya membuatnya untuk kebutuhan beberapa organisasi mahasiswa dan pemuda. Saya bertanggung jawab dalam membuat design/konten feed instagram diorganisasi HMJTI(2022-2024) dan IPNU Ranting Labanasem(2023-Sekarang).</p>
+            </div>
+        </div>
+        <!-- portofolio 3 -->
+        <div class="portofolios">
+            <div class="portofolio-cover">
+                <img src="img/portofolio/portofolio3.jpg" alt="Portofolio 3" width="350" height="250" viewbox ="0 0 100 100" />
+            </div>
+
+            <div class="portofolio-info">
+                <div class="portofolio-title">
+                    <h4>UI Design</h4>
+                </div>
+
+                <div class="portofolio-tags">
+                    <div>UI</div>
+                    <div>Design</div>
+                </div>
+
+                <p>UI Design saya membuat untuk beberapa kebutuhan pribadi(portofolio) dan tugas project dari kampus maupun saat mengikuti program MSIB. Mulai dari Mobile UI Design sampai dengan Web UI Design.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- End Portofolio -->
+
+    <!-- Skills and Experience-->
+    <section id="skills">
+        <div class="skill main-container">
+            <h1 class="section-title-skills">Experience, Skills & Tools</h1>
+            <div class="skills-grid">
+            <div class="skills-left">
+                <!-- Experience 1 -->
+                <div class="experience">
+                    <div class="line">
+                        <div></div>
+                    </div>
+
+                    <div class="experience-info">
+                        <h4 class="experience-title">Graphic Designer</h4>
+                        <p>Freelance</p>
+                        <h4 class="experience-date">2022 - Sekarang</h4>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+            <div class="experience">
+                <div class="line">
+                    <div></div>
+                </div>
+
+                <div class="experience-info">
+                    <h4 class="experience-title">Graphic Designer</h4>
+                    <p>IPNU Ranting Labanasem</p>
+                    <h4 class="experience-date">2023 - Sekarang</h4>
+                </div>
+            </div>
+
+                <!-- Experience 3 -->
+                <div class="experience">
+                    <div class="line">
+                        <div></div>
+                    </div>
+
+                    <div class="experience-info">
+                        <h4 class="experience-title">Graphic Designer</h4>
+                        <p>Himpunan Mahasiswa Jurusan Bisnis & Informatika</p>
+                        <h4 class="experience-date">2022 - 2024</h4>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="experience">
+                    <div class="line">
+                        <div></div>
+                    </div>
+
+                    <div class="experience-info">
+                        <h4 class="experience-title">Graphic Designer</h4>
+                        <p>UKM Ikatan Mahasiswa Muslim</p>
+                        <h4 class="experience-date">2022 - 2024</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-right">
+                <p>Beberapa Skill yang saya miliki saat mendalami dunia Graphic Design dalam 2 Tahun terakhir ini:</p>
+                <div class="skills-list">
+                    <ul>
+                        <li>Logo Design</li>
+                        <li>Banner Design</li>
+                        <li>Pamflet Design</li>
+                        <li>Media Sosial Design</li>
+                    </ul>
+
+                    <ul>
+                        <li>T-Shirt Design</li>
+                        <li>Mockup</li>
+                        <li>UI Design</li>
+                        <li>UX Research</li>
+                    </ul>
+                </div>
+                <br />
+                <p>Tools yang saya gunakan dalam membuat Graphic Design dan UI/UX Design:</p>
+                <div class="skills-list">
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Ilustrator</li>
+                    </ul>
+
+                    <ul>
+                        <li>Corel Draw</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Experience and Skills -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact main-container">
+            <div style="text-align: center;">
+            <h1>Contact</h1>
+            <p>Saya senang mendengar pertanyaan ataupun masukan dari Anda! Jika Anda memiliki pertanyaan, ide, atau hanya ingin menyapa, jangan ragu untuk menghubungi saya. Dan Mari berkolaborasi! Hubungi saya melalui formulir di bawah ini.</p>
+            <br>
+            </div>
+        
+        <form class="contact-form">
+            <div>
+                <input type="text" name="name" placeholder="Name">
+            </div>
+
+            <div>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+
+            <div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <div>
+                <button class="btn-submit">Send Message</button>
+            </div>
+        </div>
+        </form>
+    </section>
+    <!-- End of Contact -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-icons">
+            <a href="https://instagram.com/sftrbintangg">
+                <img src="img/instagram.png" alt="igsftrbintangg" width="24" height="24" viewbox = "0 0 24 24" />
+            </a>
+
+            <a href="https://instagram.com/ngabers.std">
+                <img src="img/instagram.png" alt="igngabers.std" width="24" height="24" viewbox = "0 0 24 24" />
+            </a>
+
+            <a href="https://linkedin.com/in/bintangsaftar">
+                <img src="img/linkedin.png" alt="libintangsaftar" width="24" height="24" viewbox = "0 0 24 24" />
+            </a>
+
+            <a href="https://github.com/bintangsaftar">
+                <img src="img/github.png" alt="gtbintangsaftar" width="24" height="24" viewbox = "0 0 24 24" />
+            </a>
+        </div>
+
+        <p style="color: white;">&#169; 2024 All Right Reserved</p>
+    </footer>
+    <!-- End of Footer -->
+</body>
+</html>
